@@ -1,4 +1,4 @@
-# code-writers-11ty-demo
+# Code Writers' 11ty Demo
  
 1. Download
 2. Run `npm install`
