@@ -1,0 +1,15 @@
+{% from "../header.njk" import header %}
+{% from "../arenaBlock.njk" import arenaBlock %}
+
+<html>
+  <head>
+    <title>11ty!</title>
+    <link rel="stylesheet" type="text/css" href="/assets/styles/styles.css">
+  </head>
+  <body>
+    {% for item in arena %}
+      <img src="
+      {{ item.image.original.url }}">
+    {% endfor %}
+  </body>
+</html>
