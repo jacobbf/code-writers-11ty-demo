@@ -1,5 +1,13 @@
-{% macro arenaBlock(blockContent) %}
+{% macro arenaBlock(arenaBlock) %}
   <div class="arena-block">
-    {{ blockContent }}
+    <img 
+    src="{{ arenaBlock.image.original.url }}"
+    loading="lazy"
+    
+    {# Are.na alt text is pretty bad (it uses the title of the block), if you control the blocks you are using you should try and make the titles suitable for alt text as well #}
+
+    alt="{{ arenaBlock.title }}"
+    >
+    <p>{{ arenaBlock.title }}</p>
   </div>
 {% endmacro %}

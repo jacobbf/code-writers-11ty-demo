@@ -1,3 +1,11 @@
 body {
   background-color: red;
 }
+
+.arena-block img {
+  max-width: 100%;
+}
+
+.arena-block p {
+  margin-top: .5em ;
+}
