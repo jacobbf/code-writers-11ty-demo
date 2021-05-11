@@ -1,4 +1,4 @@
-{% from "../header.njk" import header %}
+
 {% from "../arenaBlock.njk" import arenaBlock %}
 
 <html>
@@ -7,6 +7,10 @@
     <link rel="stylesheet" type="text/css" href="/assets/styles/styles.css">
   </head>
   <body>
+    {% include 'header.njk' %}
+
+    {{ content | safe }}
+    
     {% for item in arena | reverse %}
       {{ arenaBlock(item) }}
     {% endfor %}
